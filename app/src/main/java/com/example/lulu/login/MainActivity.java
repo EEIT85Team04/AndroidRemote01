@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         HttpURLConnection conn = null;
         Log.i(TAG, "開始访问" + "onCreate");
         try {
-            URL mURL = new URL("http://192.168.23.123:8081/WebForAndroid/LoginServlet?name=sa&password=sa123456");
+            URL mURL = new URL("http://192.168.23.123:8081/WebForAndroid/LoginServlet?name=sa&password=P@ssw0rd");
             conn = (HttpURLConnection) mURL.openConnection();
             Log.i(TAG, "開始访问" + "openConnection");
             int responseCode = conn.getResponseCode();// 调用此方法就不必再使用conn.connect()方法
