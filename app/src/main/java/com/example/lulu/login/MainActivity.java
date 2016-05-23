@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
             int responseCode = conn.getResponseCode();// 调用此方法就不必再使用conn.connect()方法
             if (responseCode == 200) {
 
-            //    InputStream is = conn.getInputStream();
+            //    InputStream is = conn.getInputStream();123
              //   String state = getStringFromInputStream(is);
                 Log.i(TAG, "访问成功" + responseCode);
             } else {
